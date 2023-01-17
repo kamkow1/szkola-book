@@ -1,9 +1,18 @@
 #!/bin/sh
 
 git checkout gh-pages
-git merge master --continue
+git merge master --no-edit
 mdbook build
 git add .
-git commit -m "$(echo deploy-inc) deploy"
+
+inc=$(cat deploy-inc)
+
+if [ "$1" = "commit" ]; then
+    git commit -m "$inc deploy"
+fi
+
+inc=$((inc+1))
+printf "$inc" > deploy-inc
+
 git push origin gh-pages
 git checkout master
