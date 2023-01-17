@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>12-01-2023 Wire komm ich zum Rathaus - szkolne notatki</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../niemiecki.html"><strong aria-hidden="true">1.</strong> Niemiecki</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../niemiecki/12-01-2023.html" class="active"><strong aria-hidden="true">1.1.</strong> 12-01-2023 Wire komm ich zum Rathaus</a></li><li class="chapter-item expanded "><a href="../niemiecki/09-01-2023.html"><strong aria-hidden="true">1.2.</strong> 09-01-2023 die Landkarte</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">szkolne notatki</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="12-01-2023-wire-komm-ich-zum-rathaus"><a class="header" href="#12-01-2023-wire-komm-ich-zum-rathaus">12-01-2023 Wire komm ich zum Rathaus</a></h1>
+<h2 id="czasowniki"><a class="header" href="#czasowniki">czasowniki</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Niemiecki</th><th style="text-align: left">Polski</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>aufgeregen</code></td><td style="text-align: left"><code>być podekscytowanym</code></td></tr>
+<tr><td style="text-align: left"><code>mitnehmen</code></td><td style="text-align: left"><code>brać ze sobą</code> / <code>zabierać</code></td></tr>
+<tr><td style="text-align: left"><code>fahren</code></td><td style="text-align: left"><code>jechać</code></td></tr>
+<tr><td style="text-align: left"><code>mieten</code></td><td style="text-align: left"><code>wypożyczyć</code></td></tr>
+<tr><td style="text-align: left"><code>biegen</code></td><td style="text-align: left"><code>skręcać</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="rzeczowniki"><a class="header" href="#rzeczowniki">rzeczowniki</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Niemiecki</th><th style="text-align: left">Polski</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>das Haltestelle</code></td><td style="text-align: left"><code>przystanek</code></td></tr>
+<tr><td style="text-align: left"><code>das Fahrrad</code></td><td style="text-align: left"><code>rower</code></td></tr>
+<tr><td style="text-align: left"><code>der Zoo</code></td><td style="text-align: left"><code>zoo</code></td></tr>
+<tr><td style="text-align: left"><code>der Supermarkt</code></td><td style="text-align: left"><code>supermarket</code></td></tr>
+<tr><td style="text-align: left"><code>der Parkplatz</code></td><td style="text-align: left"><code>parking</code></td></tr>
+<tr><td style="text-align: left"><code>die Kunstgalierie</code></td><td style="text-align: left"><code>galeria sztuki</code></td></tr>
+<tr><td style="text-align: left"><code>der Friedhof</code></td><td style="text-align: left"><code>cmentarz</code></td></tr>
+<tr><td style="text-align: left"><code>die Sebastiankirchie</code></td><td style="text-align: left"><code>kościół Sebastiana</code></td></tr>
+<tr><td style="text-align: left"><code>das Rathaus</code></td><td style="text-align: left"><code>ratusz</code></td></tr>
+<tr><td style="text-align: left"><code>das Stadtmuseum</code></td><td style="text-align: left"><code>miejskie muzeum</code></td></tr>
+<tr><td style="text-align: left"><code>die Kreuzung</code></td><td style="text-align: left"><code>skrzyżowanie</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="zwroty"><a class="header" href="#zwroty">zwroty</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Niemiecki</th><th style="text-align: left">Polski</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>weit von hier</code></td><td style="text-align: left"><code>daleko stąd</code></td></tr>
+<tr><td style="text-align: left"><code>tut mir leid</code></td><td style="text-align: left"><code>przykro mi</code></td></tr>
+<tr><td style="text-align: left"><code>immer geradeaus</code></td><td style="text-align: left"><code>cały czas prosto</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="inne"><a class="header" href="#inne">inne</a></h2>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Niemiecki</th><th style="text-align: left">Polski</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>über</code></td><td style="text-align: left"><code>nad</code></td></tr>
+<tr><td style="text-align: left"><code>durch</code></td><td style="text-align: left"><code>przez</code></td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../niemiecki.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../niemiecki/09-01-2023.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../niemiecki.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../niemiecki/09-01-2023.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
